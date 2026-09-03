@@ -22,8 +22,8 @@ export const brand = {
 
 	logo: '/images/ark-hacks-logo.webp',
 	logoRaster: '/images/ark-hacks-logo.png',
-	logoRasterWidth: 512,
-	logoRasterHeight: 512,
+	logoRasterWidth: 256,
+	logoRasterHeight: 256,
 	logoAlt: 'ARK Hacks logo',
 	defaultOgImage: '/images/ark-hacks-hero-1024w.webp',
 	heroImage: '/images/ark-hacks-hero-1024w.webp',
