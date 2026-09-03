@@ -1,0 +1,42 @@
+/** Descriptive image alts — Google rejects empty or keyword-only alts. */
+export const DESCRIPTIVE_IMAGE_ALTS = {
+	hero: 'ARK Hacks hero — ESP and aimbot overlay in ARK: Survival Ascended',
+	espWallhack: 'Wallhack outlines showing players and dinos through walls',
+	aimbotCombat: 'Soft aim assist overlay during an ARK: Survival Ascended raid',
+	squadFight: 'ARK Hacks combat overlay during a squad fight',
+	playerEsp: 'Player ESP boxes and distance readouts in a ARK raid',
+	headerArt: 'Aimbot view and bone priority controls for ARK',
+	cheatsPackage: '2D radar threat overlay for ARK: Survival Ascended',
+	rebootFight: 'Aimbot assist during a ARK firefight',
+	battleRoyale: 'ARK Hacks in-raid overview for Windows PC',
+	battleRoyaleIsland: 'ESP markers for loot and crates in ARK',
+};
+
+/** Page-level image alt by pageId (EN source of truth). */
+export const PAGE_IMAGE_ALTS = {
+	home: 'ARK Hacks homepage hero — ESP and aimbot for ARK: Survival Ascended',
+	'ark-esp': 'ARK ESP player boxes and distance readouts in a raid',
+	'ark-aimbot': 'ARK aimbot and soft aim controls on Windows PC',
+	features: 'ARK Hacks features — ESP, soft aim, and radar screenshots',
+	pricing: 'ARK Hacks store plans for monthly and lifetime licenses',
+	setup: 'ARK Hacks setup guide screenshot for Windows PC',
+	updates: 'ARK Hacks live status after EAC and game patches',
+	faq: 'ARK Hacks FAQ — delivery, setup, and update answers',
+	support: 'ARK Hacks support page for license and setup help',
+	undetected: 'ARK Hacks undetected status overview for Windows PC',
+	wallhack: 'ARK wallhack visibility through walls in a raid',
+	radar: 'ARK 2D radar overlay showing nearby threats',
+	eac: 'ARK Hacks maintenance after a EAC patch',
+	'cheats-2026': 'ARK Hacks product overview for ARK: Survival Ascended',
+	hacks: 'ARK Hacks product page — ESP, aimbot, and radar',
+	'cheat-download': 'ARK Hacks download and install delivery flow',
+	'mod-menu': 'ARK Hacks in-game menu controls',
+	'soft-aim': 'ARK soft aim FOV and smoothness settings',
+	'best-cheats': 'ARK Hacks overview for ARK: Survival Ascended on PC',
+	'aimbot-hack': 'ARK aimbot hack controls and bone priority',
+	'esp-hack': 'ARK ESP hack boxes and loot markers',
+	'unlock-all': 'ARK Hacks license features overview',
+	privacy: 'ARK Hacks privacy policy page',
+	refund: 'ARK Hacks refund policy page',
+	terms: 'ARK Hacks terms of use page',
+};
