@@ -25,6 +25,18 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Validate Cloudflare secrets
+        run: |
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN is not set. Add it under GitHub → Settings → Secrets and variables → Actions."
+            echo "Create a token at https://dash.cloudflare.com/profile/api-tokens with Cloudflare Pages → Edit permission."
+            exit 1
+          fi
+          if [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID is not set. Find it in Cloudflare Dashboard → Workers & Pages → right sidebar."
+            exit 1
+          fi
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
