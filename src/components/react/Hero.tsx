@@ -104,7 +104,13 @@ function HeroInner({
 			<div className="shell hero__content">
 				<div className="hero__copy">
 					<h1 className="hero__brand">
-						{useBrandHero ? <span data-edit="name">{title}</span> : title}
+						{useBrandHero ? (
+							<span className="hero__brand-bubble" data-edit="name">
+								{title}
+							</span>
+						) : (
+							title
+						)}
 					</h1>
 					<p className="hero__lede" data-edit={useBrandHero ? 'heroLede' : undefined}>
 						{subtitle}
