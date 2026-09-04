@@ -425,3 +425,64 @@
 		object-fit: cover;
 	}
 }
+
+/* Language switcher — global so React navbar island always gets layout rules */
+.lang-switcher {
+	position: relative;
+}
+
+.lang-switcher__panel {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 0.35rem);
+	z-index: 90;
+	width: min(16rem, calc(100vw - 2rem));
+	max-height: min(20rem, 70vh);
+	overflow-y: auto;
+	padding: 0.5rem;
+	border: 1px solid var(--line);
+	background: var(--bg-elevated);
+	border-radius: var(--radius-md);
+}
+
+.lang-switcher__note {
+	margin: 0 0 0.5rem;
+	padding: 0.45rem 0.55rem;
+	border-radius: var(--radius-sm);
+	background: color-mix(in srgb, var(--ink) 6%, transparent);
+	color: var(--ink-muted);
+	font-size: 0.72rem;
+	line-height: 1.4;
+}
+
+.lang-switcher__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0.25rem;
+}
+
+.lang-switcher__link {
+	display: grid;
+	gap: 0.1rem;
+	padding: 0.55rem 0.65rem;
+	border-radius: var(--radius-sm);
+	color: var(--ink);
+	text-decoration: none;
+	transition: background 0.15s ease;
+}
+
+.lang-switcher__native {
+	display: block;
+	font-size: 0.86rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.lang-switcher__region {
+	display: block;
+	font-size: 0.68rem;
+	color: var(--ink-faint, var(--ink-muted));
+	line-height: 1.2;
+}
