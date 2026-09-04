@@ -13,6 +13,11 @@ export default defineConfig({
 	compressHTML: true,
 	devToolbar: { enabled: false },
 	integrations: [react()],
+	server: {
+		host: true,
+		port: 4321,
+		allowedHosts: true,
+	},
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a
 		// cached external file — 'always' inflated HTML to ~160KB and tanked the
@@ -22,6 +27,9 @@ export default defineConfig({
 	},
 	vite: {
 		plugins: [tailwindcss(), brandStudioPlugin()],
+		server: {
+			allowedHosts: true,
+		},
 		build: {
 			cssMinify: true,
 			minify: 'terser',
