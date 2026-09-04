@@ -47,6 +47,6 @@ export const arkImages = {
 		{ src: '/images/ark-screenshot-3.webp', title: '', caption: '' },
 		{ src: '/images/ark-hacks-esp.webp', title: '', caption: '' },
 		{ src: '/images/ark-hacks-dino-esp.webp', title: '', caption: '' },
-		{ src: '/images/ark-hacks-hero-1024w.webp', title: '', caption: '' },
+		{ src: '/images/ark-hacks-hero-1920w.webp', title: '', caption: '' },
 	],
 } as const;

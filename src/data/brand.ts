@@ -25,8 +25,8 @@ export const brand = {
 	logoRasterWidth: 256,
 	logoRasterHeight: 256,
 	logoAlt: 'ARK Hacks logo',
-	defaultOgImage: '/images/ark-hacks-hero-1024w.webp',
-	heroImage: '/images/ark-hacks-hero-1024w.webp',
+	defaultOgImage: '/images/ark-hacks-hero-1920w.webp',
+	heroImage: '/images/ark-hacks-hero-1920w.webp',
 
 	plans: [
 		{ id: 'monthly', label: 'Monthly', price: 35, duration: 'P30D' },
@@ -164,7 +164,7 @@ export const brand = {
 				caption: 'Skeleton ESP, player ESP, and dino stats through terrain',
 			},
 			{
-				src: '/images/ark-hacks-hero-1024w.webp',
+				src: '/images/ark-hacks-hero-1920w.webp',
 				title: 'ARK Hacks cinematic hero',
 				caption: 'ARK: Survival Ascended landscape for ARK Hacks on Windows PC',
 			},
